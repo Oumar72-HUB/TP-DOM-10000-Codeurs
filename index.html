@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chapitre 1 : Introduction au DOM</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <h1 id="header">Bonjour, DOM !</h1>
+    <p id="intro">Ce paragraphe sera modifié avec JavaScript.</p>
+<!-- Selecteur DOM -->
+    <p class="text">Premier paragraphe</p>
+    <p class="text">Deuxième paragraphe</p>
+    <button onclick="changeText()">Changer le texte</button>
+    <!-- Modifier le DOM -->
+
+    <img id="image" src="https://via.placeholder.com/150" alt="Image par défaut">
+    <button onclick="changeImage()">Changer l'image</button>
+
+    <!-- Ajouter et Supprimer des elements -->
+     <h2>Ajouter et Supprimer des elements</h2>
+    <ul id="list">
+        <li>Élément 1</li>
+        <li>Élément 2</li>
+    </ul>
+    <button onclick="addElement()">Ajouter un élément</button>
+    <button onclick="removeElement()">Supprimer le dernier élément</button>
+
+    <!-- Evenements DOM -->
+    <button id="clickButton">Cliquez-moi</button>
+    <p id="message">Aucun événement déclenché.</p>
+
+    <!-- Ecouteurs Evenement DOM -->
+    <h2>Écouteurs d'Événements</h2>
+    <button id="clickButton">Cliquez-moi</button>
+    <button id="doubleClickButton">Double-cliquez-moi</button>
+    <p id="message">Aucun événement déclenché.</p>
+    <!-- Navigation dans le Dom -->
+    <div id="parent">
+        <p>Enfant 1</p>
+        <p>Enfant 2</p>
+        <p>Enfant 3</p>
+    </div>
+    <button onclick="highlightFirstChild()">Mettre en évidence le premier enfant</button>
+<!--  Animation Dom -->
+<div id="box"></div>
+    <button onclick="moveBox()">Déplacer la boîte</button>
+
+    <!-- Interraction Avec les Formulaires -->
+    <form onsubmit="validateForm(event)">
+        Nom : <input type="text" id="name"><br><br>
+        Âge : <input type="number" id="age"><br><br>
+        <input type="submit" value="Soumettre">
+    </form>
+    <p id="message"></p>
+<!-- 
+    Noeuds DOM -->
+    <div id="parentNode"></div>
+        <p>Enfant 1</p>
+        <p>Enfant 2</p>
+        <p>Enfant 3</p>
+    </div>
+    <button onclick="showNodeTypes()">Afficher les types de nœuds</button>
+
+    <!-- Collection Noeuds -->
+
+    <ul id="myList"></ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <button onclick="changeCollection()">Changer la collection DOM</button>
+
+    <!-- listes de Noeuds Dom -->
+    <div id="nodeContainer">
+        <p>Paragraphe 1</p>
+        <p>Paragraphe 2</p>
+        <p>Paragraphe 3</p>
+    </div>
+    <button onclick="manipulateNodeList()">Manipuler la liste de nœuds</button>
+    <script src="./JS/Script.js"></script>
+</body>
+</html>
